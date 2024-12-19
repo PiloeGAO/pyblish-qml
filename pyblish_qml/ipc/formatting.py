@@ -5,7 +5,7 @@ import inspect
 import traceback
 
 from . import schema
-from ..vendor import six
+import six
 
 import pyblish.lib
 import pyblish.plugin

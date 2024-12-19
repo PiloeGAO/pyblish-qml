@@ -13,7 +13,8 @@ Resources:
 import os
 import json
 
-from ..vendor import six, jsonschema
+import six
+import jsonschema
 
 cache = {}
 

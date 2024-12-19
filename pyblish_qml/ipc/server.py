@@ -22,7 +22,7 @@ import subprocess
 import time
 
 from .. import _state
-from ..vendor import six
+import six
 
 CREATE_NO_WINDOW = 0x08000000
 IS_WIN32 = sys.platform == "win32"

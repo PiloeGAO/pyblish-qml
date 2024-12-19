@@ -8,8 +8,8 @@ from functools import wraps
 import pyblish.api
 
 from . import ipc, settings, _state
-from .vendor.six.moves import queue
-from .vendor import six
+from six.moves import queue
+import six
 
 if six.PY2:
     class __FullArgSpec(object):
@@ -298,7 +298,7 @@ class Host(object):
 class QtHost(Host):
     def __init__(self):
         super(QtHost, self).__init__()
-        from .vendor.Qt import QtWidgets, QtCore, QtGui
+        from Qt import QtWidgets, QtCore, QtGui
 
         self.app = QtWidgets.QApplication.instance()
         self.window = None

@@ -2,7 +2,7 @@ import os
 import sys
 import warnings
 
-from .vendor import six
+import six
 import xml.etree.ElementTree as ElementTree
 
 cwd = os.path.dirname(sys.executable)

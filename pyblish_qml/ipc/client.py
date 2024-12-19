@@ -21,8 +21,8 @@ import threading
 import pyblish.api
 import pyblish.plugin
 
-from ..vendor import six
-from ..vendor.six.moves import queue
+import six
+from six.moves import queue
 
 
 class Proxy(object):
